@@ -51,10 +51,7 @@ export class UserService {
     const userDtos = await this.userRepository.list();
     for (let i = 0; i < userDtos.length; i++) {
       userDtos[i] = await this.extractedUserDto(userDtos[i]);
-      //todo:
-      //??? ez itt miért nem egy promise lista?
     }
-    //??? return userDtos.map(value => this.extracted(value));
     return userDtos;
   }
 
