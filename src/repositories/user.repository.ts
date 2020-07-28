@@ -7,7 +7,7 @@ import { UserDto } from '../model/user/user.dto';
 import { AxiosError } from 'axios';
 import * as bcrypt from 'bcrypt';
 
-const dbUrl = 'http://localhost:3000/user';
+const dbUrl = 'http://localhost:3001/user';
 
 @Injectable()
 export class UserRepository {
@@ -45,7 +45,6 @@ export class UserRepository {
           heroList: [],
           salt,
           password: await this.hashPassword(newUser.password, salt),
-          passwordShowMe: newUser.password
         }
       )
       .pipe(map(({data}) => data))
