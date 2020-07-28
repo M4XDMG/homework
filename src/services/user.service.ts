@@ -88,7 +88,7 @@ export class UserService {
     return this.userRepository.signUp(data);
   }
 
-  async generateRandom(count: number, heroCount?: number, empireCount?: number): Promise<UserDto[]> {
+  async generateRandom(count: number, heroCount?: number): Promise<UserDto[]> {
     const userList: UserDto[] = [];
     for (let i = 0; i < count; i++) {
       let userDto = await this.createNewRandomUser();

@@ -35,15 +35,6 @@ export class UserController {
     return this.userService.singUp(data);
   }
 
-  @Get("/random/:count/:herocount/:empirecount")
-  generateRandomUsersHeroesEmpire(
-    @Param('count') count: number,
-    @Param('herocount') heroCount?: number,
-    @Param('empirecount') empireCount?: number
-  ): Promise<UserDto[]> {
-    return this.userService.generateRandom(+count, +heroCount, +empireCount);
-  }
-
   @Get("/random/:count/:herocount")
   generateRandomUsersHeroes(
     @Param('count') count: number,
