@@ -1,3 +1,13 @@
 {
-  "user": []
+  "user": [
+    {
+      "name": "valaki",
+      "userName": "anonymus",
+      "password": "$2b$10$P2dvl3q3d2FXd824BFULSOshp1yEoyXG89fqYc5SvIB8YGJwoa5Sy",
+      "email": "x@y.com",
+      "id": "1b1b6690-ea09-4d66-991a-20bb8bb3969e",
+      "heroList": [],
+      "salt": "$2b$10$P2dvl3q3d2FXd824BFULSO"
+    }
+  ]
 }

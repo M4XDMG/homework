@@ -10,6 +10,7 @@ import { CacheService } from './services/cache.service';
 import { APP_INTERCEPTOR } from '@nestjs/core';
 import { JwtModule } from '@nestjs/jwt';
 import { JwrStrategy } from './strategy/jwr.strategy';
+import { AuthController } from './controllers/auth.controller';
 
 @Module({
   imports: [
@@ -28,6 +29,7 @@ import { JwrStrategy } from './strategy/jwr.strategy';
   controllers: [
     HeroController,
     UserController,
+    AuthController,
   ],
   providers: [
     HeroService,
