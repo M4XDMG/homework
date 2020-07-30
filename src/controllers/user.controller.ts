@@ -43,7 +43,7 @@ export class UserController {
   }
 
   @Get("/random/:count")
-  generateRandomUsers(@Param('count') count): Promise<UserDto[]> {
+  generateRandomUsers(@Param('count') count: number): Promise<UserDto[]> {
     return this.userService.generateRandom(+count);
   }
 
@@ -53,7 +53,7 @@ export class UserController {
   }
 
   @Patch('/:id')
-  patch(@Body() data: UserPatchDto, @Param('id') id: string) {
+  patch(@Body() data: UserPatchDto, @Param('id') id: string): Promise<UserDto> {
     return this.userService.patch(id, data);
   }
 }
