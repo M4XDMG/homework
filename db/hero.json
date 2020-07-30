@@ -1,3 +1,64 @@
 {
-  "hero": []
+  "hero": [
+    {
+      "name": "Nakajima",
+      "age": 55,
+      "owner": "1b1b6690-ea09-4d66-991a-20bb8bb3969e",
+      "id": "2bfcb3e6-565b-4ca3-af29-d2fba61bd84b"
+    },
+    {
+      "name": "Ignesti",
+      "age": 42,
+      "owner": "1b1b6690-ea09-4d66-991a-20bb8bb3969e",
+      "id": "aca3de5e-83a8-4f1b-9dbd-f083727f7c21"
+    },
+    {
+      "name": "Ramsey",
+      "age": 66,
+      "owner": "1b1b6690-ea09-4d66-991a-20bb8bb3969e",
+      "id": "5947f193-84ab-49b0-85b9-038ac3dc0990"
+    },
+    {
+      "name": "Calamandrei",
+      "age": 88,
+      "owner": "1b1b6690-ea09-4d66-991a-20bb8bb3969e",
+      "id": "5ee7d1cf-1c47-4687-a6c5-84296aeb9668"
+    },
+    {
+      "name": "Bates",
+      "age": 7,
+      "owner": "1b1b6690-ea09-4d66-991a-20bb8bb3969e",
+      "id": "bde733fb-3a11-45b2-8d00-7cdfb9af7948"
+    },
+    {
+      "name": "Hampton",
+      "age": 74,
+      "owner": "1b1b6690-ea09-4d66-991a-20bb8bb3969e",
+      "id": "cf788ec4-0edb-457c-b823-b3fd28048f8c"
+    },
+    {
+      "name": "Bagnoli",
+      "age": 23,
+      "owner": "1b1b6690-ea09-4d66-991a-20bb8bb3969e",
+      "id": "87da4c5a-cea0-40b6-bbbf-56700907a01b"
+    },
+    {
+      "name": "Buti",
+      "age": 13,
+      "owner": "1b1b6690-ea09-4d66-991a-20bb8bb3969e",
+      "id": "86792d37-d62f-4e6a-9196-c00e7fc9f0ac"
+    },
+    {
+      "name": "Holden",
+      "age": 34,
+      "owner": "1b1b6690-ea09-4d66-991a-20bb8bb3969e",
+      "id": "067a7c04-dc62-4d5d-b2ec-9c24201bc0b5"
+    },
+    {
+      "name": "Cruz",
+      "age": 91,
+      "owner": "1b1b6690-ea09-4d66-991a-20bb8bb3969e",
+      "id": "8a7fab80-2914-4ef9-b191-625e98dfc9c6"
+    }
+  ]
 }

@@ -25,7 +25,7 @@ export class UserController {
     return this.userService.list();
   }
 
-  @Get(":id")
+  @Get("/:id")
   get(@Param("id") id: string): Promise<UserDto> {
     return this.userService.get(id);
   }
@@ -47,12 +47,12 @@ export class UserController {
     return this.userService.generateRandom(+count);
   }
 
-  @Delete(":id")
+  @Delete("/:id")
   delete(@Param('id') id: string): Promise<UserDto> {
     return this.userService.delete(id);
   }
 
-  @Patch(':id')
+  @Patch('/:id')
   patch(@Body() data: UserPatchDto, @Param('id') id: string) {
     return this.userService.patch(id, data);
   }

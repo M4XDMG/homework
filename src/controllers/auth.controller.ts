@@ -11,13 +11,13 @@ export class AuthController {
     constructor(private authService: AuthService) {
     }
 
-    @Post("signin")
+    @Post("/signin")
     async singIn(@Body() data: AuthDto): Promise<any> {
         const accessToken = await this.authService.signIn(data);
         return  {accessToken};
     }
 
-    @Post("test")
+    @Post("/test")
     @UseGuards(AuthGuard())
     test(@Req() req) {
         return req.user.name;

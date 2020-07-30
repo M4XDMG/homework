@@ -24,7 +24,7 @@ export class HeroController {
     return this.heroService.listByUser(req.user);
   }
 
-  @Get(":id")
+  @Get("/:id")
   get(@Param('id') id: string, @Req() req): Promise<any> {
     return this.heroService.getByUser(id, req.user);
   }
@@ -39,12 +39,12 @@ export class HeroController {
     return this.heroService.create(heroCreateDto, req.user)
   }
 
-  @Patch(':id')
+  @Patch('/:id')
   patch(@Body() data: HeroPatchDto, @Param('id') id: string, @Req() req) {
     return this.heroService.patchByUser(id, data, req.user);
   }
 
-  @Delete(":id")
+  @Delete("/:id")
   delete(@Param('id') id: string, @Req() req): Promise<HeroDto> {
     return this.heroService.deleteByUser(id, req.user);
   }
