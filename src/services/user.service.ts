@@ -16,24 +16,6 @@ export class UserService {
     this.chance = Chance.Chance();
   }
 
-  async userNameList(): Promise<string[]> {
-    return (await this.list()).map(user => user.userName);
-  }
-
-  async nestedHeroes(): Promise<Hero[]> {
-    const heroDtos = await this.heroService.list();
-    const heroes: Hero[] = [];
-    for (let i = 0; i < heroDtos.length; i++) {
-      heroes.push({...(await this.heroService.get(heroDtos[i].id)),
-        owner: await this.nestedById(heroDtos[i].owner)});
-    }
-    return heroes;
-  }
-
-  private convertToUser(user: UserDto): User {
-    return {...user, heroList:[]};
-  }
-
   async nested(): Promise<User[]> {
     const userDtos = await this.userRepository.list();
     const users: User[] = [];
