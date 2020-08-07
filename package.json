@@ -32,7 +32,7 @@
     "@types/chance": "^1.1.0",
     "bcrypt": "^5.0.0",
     "cache-manager": "^3.3.0",
-    "class-transformer": "^0.2.3",
+    "class-transformer": "^0.3.1",
     "class-validator": "^0.12.2",
     "json-server": "^0.16.1",
     "nest": "^0.1.6",
