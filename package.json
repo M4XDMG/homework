@@ -33,7 +33,7 @@
     "bcrypt": "^5.0.0",
     "cache-manager": "^3.3.0",
     "class-transformer": "^0.2.3",
-    "class-validator": "^0.12.2",
+    "class-validator": "^0.14.0",
     "json-server": "^0.16.1",
     "nest": "^0.1.6",
     "passport": "^0.4.1",
